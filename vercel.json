@@ -10,6 +10,5 @@
     }
   },
   "buildCommand": "npm run build",
-  "devCommand": "npm run dev",
-  "output": ".next"
+  "devCommand": "npm run dev"
 }
