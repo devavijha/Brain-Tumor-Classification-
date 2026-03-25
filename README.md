@@ -1,18 +1,18 @@
-# 🧠 Brain Tumor MRI Classifier
+# Brain Tumor MRI Classifier
 
 A production-ready AI-powered web application for brain tumor classification from MRI images using deep learning.
 
-## ✨ Features
+## Features
 
-- **🎯 AI-Powered Classification**: Deep learning model trained on thousands of MRI scans
-- **⚡ Real-time Predictions**: Get results in seconds with confidence scores
-- **📊 Grad-CAM Visualization**: See what the AI focused on during prediction
-- **🎨 Modern UI**: Beautiful dark theme with blue accents, responsive design
-- **📱 Mobile-Friendly**: Works seamlessly on all devices
-- **🔒 Privacy-Focused**: Images processed securely, no data storage
-- **🚀 Vercel-Native**: Fully hosted on Vercel, no backend required (ONNX inference)
+- **AI-Powered Classification**: Deep learning model trained on thousands of MRI scans
+- **Real-time Predictions**: Get results in seconds with confidence scores
+- **Grad-CAM Visualization**: See what the AI focused on during prediction
+- **Modern UI**: Beautiful dark theme with blue accents, responsive design
+- **Mobile-Friendly**: Works seamlessly on all devices
+- **Privacy-Focused**: Images processed securely, no data storage
+- **Vercel-Native**: Fully hosted on Vercel, no backend required (ONNX inference)
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────┐
@@ -36,11 +36,11 @@ A production-ready AI-powered web application for brain tumor classification fro
 ```
 
 ### Why ONNX?
-- ✅ No separate Python backend needed
-- ✅ Fully Vercel-deployable
-- ✅ Faster cold start times
-- ✅ Cost-effective (serverless)
-- ✅ Auto-scaling built-in
+- No separate Python backend needed
+- Fully Vercel-deployable
+- Faster cold start times
+- Cost-effective (serverless)
+- Auto-scaling built-in
 
 ## 🛠️ Tech Stack
 
@@ -70,7 +70,7 @@ A production-ready AI-powered web application for brain tumor classification fro
 - Git
 - Vercel account (for deployment)
 
-## 🚀 Quick Start
+## Quick Start
 
 ### 1. Clone and Setup
 
@@ -134,7 +134,7 @@ npm run dev
 
 Visit `http://localhost:3000`
 
-## 📦 API Documentation
+## API Documentation
 
 ### POST /api/predict
 
@@ -173,7 +173,7 @@ Form Data:
 - `pituitary` - Pituitary tumor
 - `notumor` - No tumor detected
 
-## 🎨 UI Components
+## UI Components
 
 ### Image Uploader
 - Drag-and-drop support
@@ -224,36 +224,8 @@ const TUMOR_TYPES = {
 };
 ```
 
-## 🚀 Deployment
 
-### Deploy to Vercel (Recommended)
-
-```bash
-# Login to Vercel
-npm i -g vercel
-vercel login
-
-# Deploy
-vercel
-```
-
-**Or connect GitHub:**
-
-1. Push to GitHub
-2. Go to [Vercel Dashboard](https://vercel.com)
-3. Import project
-4. Add environment variables
-5. Deploy
-
-### Deployment Checklist
-
-- [ ] Model file in `public/models/brain_tumor_model.onnx`
-- [ ] Environment variables set in Vercel dashboard
-- [ ] `vercel.json` configured correctly
-- [ ] API timeout set to 60 seconds (for large images)
-- [ ] Memory limit set to 3GB (for model inference)
-
-## 📊 Performance
+## Performance
 
 **Model Inference:**
 - Average time: 2-5 seconds
@@ -266,7 +238,7 @@ vercel
 - ONNX optimizations for faster inference
 - Lazy loading of UI components
 
-## 🔒 Security & Privacy
+## Security & Privacy
 
 - ✅ Images are not stored
 - ✅ No tracking or telemetry
@@ -275,7 +247,7 @@ vercel
 - ✅ Input validation on all uploads
 - ✅ Rate limiting (implement as needed)
 
-## 📝 Error Handling
+## Error Handling
 
 The application handles:
 - Invalid file types
@@ -286,7 +258,7 @@ The application handles:
 
 All errors are logged and displayed to the user with helpful messages.
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### "Model not found" error
 - Ensure `public/models/brain_tumor_model.onnx` exists
@@ -302,7 +274,7 @@ All errors are logged and displayed to the user with helpful messages.
 - Verify model architecture compatibility
 - Check Node.js version compatibility
 
-## 📚 References
+##  References
 
 - [ONNX Model Zoo](https://github.com/onnx/models)
 - [ONNX Runtime Node.js](https://github.com/microsoft/onnxruntime-node)
@@ -314,7 +286,7 @@ All errors are logged and displayed to the user with helpful messages.
 
 This project is open source and available under the MIT License.
 
-## ⚠️ Medical Disclaimer
+##  Medical Disclaimer
 
 **This tool is for educational and research purposes only.**
 
@@ -323,7 +295,7 @@ This project is open source and available under the MIT License.
 - This is NOT a medical device
 - Results should not be used for treatment decisions
 
-## 🤝 Contributing
+##  Contributing
 
 Contributions are welcome! Please:
 1. Fork the repository
@@ -341,4 +313,4 @@ For issues and questions:
 
 ---
 
-Built with ❤️ using Next.js, ONNX, and TailwindCSS
+Built by Abhishek Jha
