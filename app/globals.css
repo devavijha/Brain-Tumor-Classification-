@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-[#FCFCFD] text-[#0A0A0A] antialiased selection:bg-gray-200 selection:text-gray-900;
+    font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+}
+
+@layer components {
+  .hero-bg {
+    background: radial-gradient(circle at top center, #ffffff 0%, #FCFCFD 100%);
+  }
+}
+
+/* Base fade animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Image reveal */
+@keyframes revealImage {
+  from { filter: blur(10px) brightness(0.9); opacity: 0; transform: scale(0.98); }
+  to { filter: blur(0) brightness(1); opacity: 1; transform: scale(1); }
+}
+
+.img-reveal {
+  animation: revealImage 1s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

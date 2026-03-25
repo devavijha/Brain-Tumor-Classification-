@@ -1,0 +1,15 @@
+{
+  "env": {
+    "NEXT_PUBLIC_API_URL": "@next_public_api_url",
+    "NEXT_PUBLIC_MODEL_VERSION": "@next_public_model_version"
+  },
+  "functions": {
+    "app/api/**": {
+      "maxDuration": 60,
+      "memory": 3008
+    }
+  },
+  "buildCommand": "npm run build",
+  "devCommand": "npm run dev",
+  "output": ".next"
+}
